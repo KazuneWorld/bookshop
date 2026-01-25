@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書籍ショップ - ホーム</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 書籍ショップ</h1>
+            <nav>
+                <a href="/">ホーム</a>
+                <a href="/cart" id="cart-link">
+                    カート <span id="cart-count" class="badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>おすすめの書籍</h2>
+            <p>プログラミングからデザインまで、幅広い技術書を取り揃えています</p>
+        </section>
+
+        <section class="books-grid" id="books-grid">
+            <!-- Books will be loaded here dynamically -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 書籍ショップ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/cart.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

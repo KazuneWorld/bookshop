@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チェックアウト - 書籍ショップ</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 書籍ショップ</h1>
+            <nav>
+                <a href="/">ホーム</a>
+                <a href="/cart" id="cart-link">
+                    カート <span id="cart-count" class="badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>チェックアウト</h2>
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <h3>配送先情報</h3>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">お名前 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号 *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">住所 *</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">支払い方法 *</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">選択してください</option>
+                            <option value="credit">クレジットカード</option>
+                            <option value="bank">銀行振込</option>
+                            <option value="cod">代金引換</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">注文を確定する</button>
+                </form>
+            </div>
+            <div class="order-summary">
+                <h3>注文概要</h3>
+                <div id="order-items">
+                    <!-- Order items will be loaded here -->
+                </div>
+                <div id="order-total">
+                    <!-- Order total will be shown here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 書籍ショップ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/cart.js"></script>
+    <script src="/js/checkout.js"></script>
+</body>
+</html>

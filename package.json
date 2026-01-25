@@ -1,0 +1,17 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "書籍ショッピングECサイト - Book Shopping E-commerce Site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
