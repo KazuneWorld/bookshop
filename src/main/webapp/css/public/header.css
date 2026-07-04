@@ -1,0 +1,196 @@
+header {
+  width: 100%; /* ヘッダー全体の横幅をページ全体に合わせる */
+  background: #fff; /* 背景色を白に設定 */
+  
+  /*js用*/
+  position: fixed; /* 画面上部に固定 */
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease; 
+  z-index: 1000; /* 他の要素より前面に表示 */
+}
+
+/* ヘッダーの中身を並べるコンテナ */
+.header-container {
+  width: 100%; /* 横幅100% */
+  /* max-width: 1200px; を削除または大きくする */
+  height: 80px; /* 高さ150pxに設定 */
+  display: flex; /* 横並び配置 */
+  align-items: center; /* アイテムの縦位置を中央に揃える */
+  justify-content: space-between; /* 左(ロゴ),中央(検索),右(ボタン群)を両端揃え */
+  /* margin: 0 auto; は残してOK */
+  padding: 25px 30px 15px 0px; /* 上下・左右に余白 */
+  box-sizing: border-box; /* パディングをwidth/heightに含める */
+  position: relative; /* 子要素の絶対配置の基準 */
+}
+
+/* ロゴエリア全体 */
+.header-logo-area {
+  flex: 0 0 auto; /* 縮小しない */
+}
+
+/* サイトロゴ部分（画像） */
+.header-logo {
+  margin-top: 6px;
+  display: flex;
+}
+
+/* 検索エリア全体 */
+.header-search-area {
+  position: absolute; /* 絶対配置 */
+  left: 50%; /* 左端を中央に */
+  transform: translateX(-50%); /* 自身の幅の半分だけ左に移動して真ん中に */
+  display: flex;
+  justify-content: center; /* 中央配置 */
+  padding: 0 20px; /* 左右に余白を確保 */
+}
+
+/* 中央の検索フォーム部分 */
+.search-form {
+  display: flex; /* 横並びに */
+  align-items: center; /* 高さ中央揃え */
+  background: #f7f7fa; /* うすいグレー系背景で一体感 */
+  border-radius: 5px; /* 全体を丸く */
+  padding: 5px 10px; /* 内側余白(上下/左右) */
+  gap: 0; /* アイテム間ギャップなし */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04); /* うすい影で浮き上がり感 */
+
+}
+
+/* カテゴリーセレクトボックス */
+.search-form #category {
+  border: none; /* 枠線消す */
+  outline: none; /* フォーカス枠線消し */
+  background: transparent; /* 背景を透明に */
+  font-size: 1rem; /* テキストサイズ */
+  padding: 8px 10px 8px 0; /* 上下に余白、右にも少しスペース */
+  border-right: 1px solid #ddd; /* 右側に薄い仕切り線 */
+  margin-right: 8px; /* 線と次のinputの間に隙間 */
+}
+
+/* キーワード入力欄 */
+.search-form input[type="text"] {
+  border: none; /* 枠線消す */
+  font-size: 1rem; /* テキストサイズ */
+  padding: 8px 10px; /* 上下・左右に余白 */
+  background: transparent; /* 背景を透明に */
+  width:350px; /* 横幅 */
+  outline: none; /* フォーカス時の枠を消す */
+}
+
+/* 検索ボタン */
+.search-form button[type="submit"] {
+  background: #3e6fbe; /* ブルー系の目立つ色 */
+  color: #fff; /* 文字は白 */
+  border: none; /* 枠線を無くす */
+  border-radius: 5px; /* 丸くする */
+  padding: 8px 20px; /* 上下・左右余白 */
+  font-size: 1rem; /* テキストサイズ */
+  cursor: pointer; /* カーソルをポインタにする */
+  margin-left: 8px; /* inputとの間に隙間 */
+}
+
+/* 検索ボタンのホバー時 */
+.search-form button[type="submit"]:hover {
+  background: #245197; /* より濃いブルーに */
+}
+
+/* 右側のボタンリンクたち（TOP、管理者、マイページ、カート、会員登録、ログイン、ログアウト） */
+.header-buttons-area {
+  margin-right: 30px; /* 右側にちょっと余白 */
+  flex: 0 0 auto; /* 縮小しない */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.header-buttons-area > a {
+  display: inline-block;
+}
+.header-buttons-area > a button {
+  background: #f5f5f7;
+  color: #3e6fbe;
+  font-size: 1rem;
+  border: 1px solid #3e6fbe;
+  border-radius: 5px;
+  padding: 8px 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.header-buttons-area > a button:hover {
+  background: #dde7fa;
+}
+
+.Mypage{
+	display: flex;
+	 flex-direction: column;   /* ← 縦並び */
+	 align-items: center;      /* ← 中央寄せ */
+	 font-size: 12px;
+	 font-weight: bold;
+	 color: #2f6fd6;
+}
+
+
+.Cart{
+	display: flex;
+	 flex-direction: column;   /* ← 縦並び */
+	 align-items: center;      /* ← 中央寄せ */
+	 font-size: 12px;
+	 font-weight: bold;
+	 color: #2f6fd6;
+	 text-decoration: none;
+}
+
+.Login{
+	display: flex;
+	 flex-direction: column;   /* ← 縦並び */
+	 align-items: center;      /* ← 中央寄せ */
+	 font-size: 12px;
+	 font-weight: bold;
+	 color: #2f6fd6;
+	 text-decoration: none;
+}
+
+.Logout{
+	display: flex;
+	 flex-direction: column;   /* ← 縦並び */
+	 align-items: center;      /* ← 中央寄せ */
+	 font-size: 12px;
+	 font-weight: bold;
+	 color: #2f6fd6;
+	 text-decoration: none;
+}
+
+.Admin{
+	display: flex;
+	 flex-direction: column;   /* ← 縦並び */
+	 align-items: center;      /* ← 中央寄せ */
+	 font-size: 12px;
+	 font-weight: bold;
+	 color: #2f6fd6;
+}
+
+.Register{
+	display: flex;
+	 flex-direction: column;   /* ← 縦並び */
+	 align-items: center;      /* ← 中央寄せ */
+	 font-size: 12px;
+	 font-weight: bold;
+	 color: #2f6fd6;
+	 text-decoration: none;
+}
+
+/* 隠れている状態 */
+header.hidden {
+    transform: translateY(-100%);
+}
+
+/* 表示される状態 */
+header.visible {
+    transform: translateY(0);
+}
+/* ページ全体の上部にヘッダー分の余白を追加(js用) */
+body {
+  padding-top: 98px; /* ヘッダーの高さ分だけ上部に余白を追加 */
+}

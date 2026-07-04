@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body {
+	background: #f5f6fa;
+	/* font-family: ; */
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* 本人確認ボックス */
+.kyc-content {
+	background: #fff;
+	padding: 2rem 2rem 2rem 2rem; /*内余白*/
+	border-radius: 12px; /*角丸*/
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /*影*/
+	width: 420px; /*横幅*/
+}
+.kyc-content {
+	background: #fff;
+	padding: 4rem 2rem 10rem 2rem; /*内余白*/
+	border-radius: 12px; /*角丸*/
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /*影*/
+	width: 420px; /*横幅*/
+	text-align: justify;
+}
+
+/* 本人確認の文字 */
+.kyc-title {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1.5rem; /*下余白*/
+	letter-spacing: 0.1em; /*文字間*/
+}
+
+/* メッセージ */
+.message {
+	font-size: 1.1rem; /*文字サイズ*/
+	text-align: center; /*中央揃え*/
+}
+.message-error {
+	color: #d93025;
+}
+
+.kyc-message {
+	text-align: center;
+}
+
+/* フォーム全体 */
+.kyc-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+	font-size: 1rem;
+	margin-bottom: 0.2rem;
+}
+
+/* 入力欄 */
+.form-input {
+	padding: 0.7rem 0.9rem;
+	border: 1px solid #ccc; /* 枠線 */
+	border-radius: 5px; 
+	font-size: 1rem;
+}
+/* 入力欄フォーカス時 */
+.form-input:focus {
+	 border-color: #000;
+	/* outline: none;  */
+	background: #fff; 
+}
+
+.form-actions {
+	display: flex;
+	flex-direction: column;
+}
+
+/* 確認ボタン */
+.btn {
+	padding: 0.7rem 0; /* 上下の余白 */
+	font-size: 1.1rem; 	/* 文字サイズ */
+	border: none; /* 枠線なし */
+	border-radius: 5px; /* 角丸 */
+	cursor: pointer; /* カーソルをポインターに */
+}
+
+/*色とか*/
+.btn-primary {
+	background: #1976d2;
+	color: #fff;
+	font-weight: bold;
+}
+
+/*ホバー時*/
+.btn-primary:hover {
+	background: #1256a3;
+}
+

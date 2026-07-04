@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+body {
+  background: #f8f8f8;
+  /* font-family: 'Yu Gothic', 'Meiryo', sans-serif; */
+  padding: 0;
+}
+
+.main-content {
+  padding: 0 0 0 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 2rem 3rem 2rem;
+  min-height: 79vh; /* ヘッダー分の高さを考慮してこのコンテナのサイズを決定 */
+}
+
+.page-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin: 0 0 2.5rem 0;
+  letter-spacing: 0.05em; /* 文字間を少し広げる */
+}
+
+/* メニューコンテナ（3画面共通） */
+.mypage-menu,
+.edit-menu,
+.admin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.menu-item {
+  width: 100%;
+  max-width: 400px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  display: block;
+}
+
+/* ボタンスタイル */
+.btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #00000070;
+}
+
+/* 通常のボタン（青） */
+.btn-primary {
+  background: #1976d2;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1256a3;
+}
+
+/* 退会ボタン（赤） */
+.btn-delete {
+  color: #d32f2f;
+  border: 2px solid #1256a3; /*枠線は青で*/
+}

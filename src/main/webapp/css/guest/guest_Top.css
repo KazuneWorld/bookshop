@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+.main-content {
+  padding: 0rem 0;
+}
+/* ページ中央の白背景ボックス */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+/* ログインユーザー別メッセージ */
+.welcome-message,.user-status,.admin-status {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* セクションタイトル */
+.section-title {
+  font-size: 1.7rem;
+  margin: 2rem 0 1rem 0;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+/* トップページのおすすめ書籍リスト */
+.top-books-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* 複数行に折り返し */
+  margin-bottom: 2rem;
+}
+/* トップページのおすすめ書籍アイテム */
+ .top-book-item {
+   width: 180px;
+  background: #fafbfc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1rem 0.5rem; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+/* トップページのおすすめ書籍画像 */
+.top-book-image {
+  width: 120px;
+  height: 160px;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   background: #eaf4ff; 
+  border-radius: 6px;
+}
+.top-book-image .image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+ .no-image {
+  color: #888;
+  font-size: 0.95rem;
+}
+/* トップページのおすすめ書籍タイトル */
+.top-book-title {
+  font-size: 1rem;
+  color: #1976d2;
+  margin: 0.5rem 0 0 0;
+  font-weight: bold;
+  text-align: center;
+}
+.top-book-title-link {
+  text-decoration: none; /* リンクのデフォルトの装飾を削除 */
+} 
+
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.book-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fafbfc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 0.5rem 0rem;
+  gap: 2rem;
+  width: 100%;
+  margin: 0;
+}
+.book-image {
+  width: 200px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+.book-image .image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.book-title {
+  font-size: 28px;
+  color: #1976d2;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  text-align: left;
+
+}
+.book-title-link {
+	text-decoration: none;
+}
+/* 書籍タイトルリンクホバー時 */
+.book-title-link:hover .book-title {
+  color: #1976d2;
+  text-decoration: underline;
+}
+.message-empty {
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+} 
+
+/* 価格・著者・出版社 */
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.book-writer,
+.book-company,
+.book-price {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.book-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 0.5rem;
+}
+
+.top-book-item {
+  position: relative; /*なにこれ*/
+}
+
+.rank-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 32px;
+  z-index: 10;
+}
+
+.rank-badge img {
+  width: 100%;
+}
+
+.top-books-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;    /* はみ出したら横スクロール */
+}
+
+

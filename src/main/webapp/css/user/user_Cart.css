@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body
+{
+    background: #f8f8f8;
+    /* font-family: 'Yu Gothic', 'Meiryo', sans-serif; */
+    padding: 0;
+}
+.main-content {
+	padding: 0px 0;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 32px 32px 40px 32px;
+}
+
+.page-title {
+	font-size: 2rem;
+	font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cart-items {
+	margin-bottom: 32px;
+}
+
+/* カート内商品テーブル */
+.cart-table {
+	width: 100%;
+	border-collapse: collapse; /* セルの間隔をなくす */
+	background: #fafbfc;
+}
+.cart-table th, .cart-table td {
+	padding: 20px 8px;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+.cart-table th {
+	background: #e9ecef;
+	font-weight: 600;
+}
+
+.book-image img.image {
+	width: 60px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+.no-image {
+	color: #aaa;
+	font-size: 0.9rem;
+}
+.table-cell {
+	vertical-align: middle; /* セル内の縦位置を中央に */
+}
+
+/* 数量調整フォーム */
+.quantity-group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.quantity-label {
+	font-size: 1rem;
+}
+.quantity-input {
+	width: 60px;
+	padding: 4px 8px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* ボタン共通スタイル */
+.btn {
+	padding: 6px 16px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+/* 更新ボタン */
+.btn-small {
+	padding: 4px 10px;
+	font-size: 1rem;
+	background: #6c757d;
+	color: #fff;
+}
+.btn-small:hover {
+	background: #495057;
+}
+/* 削除ボタン */
+.btn-danger-small {
+	padding: 4px 10px;
+	font-size: 1rem;
+	background: #dc3545;
+	color: #fff;
+}
+.btn-danger-small:hover {
+	background: #b02a37;
+}
+/* 購入確認ボタン */
+.btn-primary {
+	background: #007bff;
+	color: #fff;
+}
+.btn-primary:hover {
+	background: #0056b3;
+}
+.stock-out {
+	color: #dc3545;
+	font-weight: bold;
+}
+/* 購入確認エリア */
+.cart-actions {
+	text-align: right;
+	margin-bottom: 24px;
+    padding-right: 1rem;
+}
+.checkout-form {
+
+}
+/* カートが空の場合のメッセージ */
+.message-empty {
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 32px 0;
+}
+.back-link {
+	text-align: center;
+	margin-top: 24px;
+}
+.back-link .link {
+}
+.back-link .link:hover {
+}
+
+/* カート合計金額表示 */
+.cart-total {
+    text-align: right;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    padding-right: 1rem;
+}
+/* 書籍名セルの左寄せ */
+.table-cell.title {
+    text-align: left;
+	width: 610px;
+}

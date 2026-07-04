@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body {
+	background: #f8f8f8;
+	padding: 0;
+	margin: 0;
+}
+
+.main-content {
+	/* メイン背景 */
+	padding: 20px 0;
+}
+
+.container {
+	/* ページ中央のコンテナ */
+	max-width: 700px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 32px;
+}
+
+.page-title {
+	/* ページタイトル */
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+.user-list {
+	/* ユーザーリストエリア */
+	margin-bottom: 24px;
+}
+
+.user-table {
+	/* ユーザーテーブル */
+	width: 100%;
+	border-collapse: collapse;
+	background: #fafbfc;
+}
+
+.user-table th, .user-table td {
+	/* テーブルセル */
+	padding: 12px 8px;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.user-table th {
+	/* テーブルヘッダー */
+	background: #e9ecef;
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+
+.table-cell {
+	/* テーブルセル */
+	vertical-align: middle; /* セル内の縦位置を中央に */
+	font-size: 0.95rem;
+}
+
+.edit-form {
+	/* 編集フォーム */
+	display: contents;
+}
+
+.form-input {
+	/* 入力欄 */
+	padding: 6px 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 90%;
+	box-sizing: border-box;
+}
+
+.action-buttons {
+	/* アクションボタングループ */
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+}
+
+.action-form {
+	/* アクションフォーム */
+	display: inline-block;
+}
+
+.btn {
+	/* ボタン共通 */
+	padding: 8px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.btn-primary {
+	/* 確定ボタン */
+	background: #007bff;
+	color: #fff;
+}
+.btn-primary:hover {
+    background: #0056b3;
+}
+.btn-secondary {
+	/* キャンセル・編集ボタン */
+	background: #6c757d;
+	color: #fff;
+}
+
+.btn-secondary:hover {
+	background: #495057;
+}
+
+.btn-danger {
+	/* 退会ボタン */
+	background: #dc3545;
+	color: #fff;
+}
+
+.btn-danger:hover {
+	background: #b02a37;
+}
+
+.btn-small {
+	padding: 4px 12px;
+	font-size: 0.9rem;
+}
+
+.empty-message {
+	/* 空メッセージ */
+	font-size: 1rem;
+	padding: 32px;
+}
+
+.back-link {
+	/* 戻るリンク */
+	text-align: center;
+	margin-top: 24px;
+}

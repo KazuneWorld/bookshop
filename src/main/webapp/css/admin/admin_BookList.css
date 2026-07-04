@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body {
+	background: #f8f8f8;
+	padding: 0;
+	margin: 0;
+}
+
+.main-content {
+	/* メイン背景 */
+	padding: 20px 0;
+}
+
+.container {
+	/* ページ中央のコンテナ */
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 32px;
+}
+
+.page-title {
+	/* ページタイトル */
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	color: #000;
+}
+
+.search-form {
+	/* 検索フォーム */
+	width: 50%;
+}
+
+.search-group {
+	/* 検索グループ */
+	display: flex;
+	align-items: center;
+}
+
+.category-select {
+	/* カテゴリー選択 */
+	padding: 8px 12px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.search-input {
+	/* 検索入力欄 */
+	flex: 1;
+	padding: 8px 12px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.btn {
+	/* ボタン共通 */
+	padding: 8px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.btn-primary {
+	/* 検索ボタン */
+	background: #007bff;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	background: #0056b3;
+}
+
+.btn-secondary {
+	/* 編集ボタン */
+	background: #6c757d;
+	color: #fff;
+}
+
+.btn-small {
+	/* 小さいボタン */
+	padding: 4px 12px;
+	font-size: 0.9rem;
+}
+
+.book-list {
+	/* 書籍リストエリア */
+	margin-bottom: 24px;
+}
+
+.book-table {
+	/* 書籍テーブル */
+	width: 100%;
+	border-collapse: collapse;
+	background: #fafbfc;
+}
+
+.book-table th, .book-table td {
+	/* テーブルセル */
+	padding: 12px 8px;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.book-table th {
+	/* テーブルヘッダー */
+	background: #e9ecef;
+	font-weight: 600;
+	color: #000;
+	font-size: 0.95rem;
+}
+
+.table-cell {
+	/* テーブルセル */
+	vertical-align: middle;
+	font-size: 0.95rem;
+	color: #000;
+}
+
+.action-form {
+	/* 編集ボタンフォーム */
+	display: inline-block;
+}
+
+.empty-message {
+	/* 空メッセージ */
+	font-size: 1rem;
+	padding: 32px;
+}
+
+.back-link {
+	/* 戻るリンク */
+	text-align: center;
+	margin-top: 24px;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*共通レイアウト*/
+
+body {
+	background: #f8f8f8;
+	margin: 0;
+	padding: 0;
+}
+
+.main-content {
+	padding: 20px 0;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 32px;
+}
+
+/*タイトル*/
+
+.page-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	color: #000;
+}
+
+/* テーブル*/
+
+.order-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fafbfc;
+}
+
+.order-table th,
+.order-table td {
+	padding: 12px 8px;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 0.95rem;
+}
+
+.order-table th {
+	background: #e9ecef;
+	font-weight: 600;
+	color: #000;
+}
+
+/*フォーム・ボタン*/
+
+.action-form {
+	display: inline-block;
+}
+
+input[type="date"] {
+	padding: 4px 6px;
+	font-size: 0.9rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* ボタン共通 */
+.btn {
+	padding: 6px 14px;
+	border: none;
+	border-radius: 4px;
+	font-size: 0.9rem;
+	cursor: pointer;
+	font-weight: bold;
+	color: #fff;
+	background-color: #6c757d;
+}
+
+/* 更新・配送完了 */
+.btn-secondary {
+	background: #6c757d;
+	color: #fff;
+}
+
+.btn-secondary:hover {
+	background: #5a6268;
+}
+
+/*配送ステータス*/
+
+.status-not {
+	color: #d32f2f;
+	font-weight: bold;
+}
+
+.status-done {
+	color: #2e7d32;
+	font-weight: bold;
+}
+s
+
+.empty-message {
+	padding: 32px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.back-link {
+	text-align: center;
+	margin-top: 24px;
+}

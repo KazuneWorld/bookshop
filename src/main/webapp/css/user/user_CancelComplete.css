@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.body{
+	background: #f8f8f8;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cancel-complete-content {
+	background: #fff;
+	padding: 2rem 2rem 2rem 2rem; /*内余白*/
+	border-radius: 12px; /*角丸*/
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /*影*/
+	width: 420px; /*横幅*/
+	text-align: center;
+}
+
+.cancel-complete-title {
+	/*中央揃え？*/
+	text-align: center;
+}
+
+.cancel-complete-message {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.back-link {
+	margin-top: 2rem;
+	text-align: center;
+}

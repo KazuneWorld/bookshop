@@ -1,0 +1,187 @@
+/* 既存のCSSに追加するスタイル */
+
+/* オーバーレイ背景 */
+.ad-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(2px); /* 背景をぼかす効果 */
+  z-index: 9998; /* ポップアップの背後に配置 */
+}
+
+/* メインポップアップ */
+.ad-popup {
+  position: fixed; /* 画面中央に配置 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 中央揃え */
+  background: white;
+  border-radius: 12px;
+  padding: 0px;
+  width: 90%;
+  max-width: 475px;
+  z-index: 9999; /* オーバーレイの前面に配置 */
+}
+/* ポップアップコンテンツ */
+.ad-popup-content {
+  text-align: center;
+  padding: 40px;
+}
+/* 広告テキストスタイル */
+.ad-title {
+  font-size: 28px;
+  font-weight: 450;
+  margin: 0 0 20px 0;
+  color: #000;
+}
+/* 広告説明文 */
+.ad-description {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 40px 0;
+}
+/* 広告アクションボックス */
+.ad-action-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ad-action-box:hover {
+  background-color: #d9d9d9;
+}
+.ad-action-text {
+  text-align: left;
+  flex: 1;
+}
+
+.ad-action-title {
+  font-size: 20px;
+  font-weight: 450;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.ad-action-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.ad-play-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1e40af;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 16px;
+  color: #fff;
+}
+
+/* 広告再生モーダル */
+.ad-video-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 中央揃え */
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  overflow: hidden;
+}
+
+.ad-video-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-video-header {
+  padding: 12px 20px;
+  text-align: right;
+  font-size: 13px;
+    color: #999;
+}
+
+.ad-video-area {
+  padding: 60px 40px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 広告完了モーダル（閉じるボタン付き） */
+.ad-complete-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 中央揃え */
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  z-index: 10000; /* 最前面に配置 */
+  overflow: hidden;
+}
+/* 広告完了コンテンツ */
+.ad-complete-content {
+  position: relative;
+}
+/* 閉じるボタンスタイル */
+.ad-close-button {
+  position: absolute;
+  right: 12px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ad-close-button:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.ad-complete-area {
+  padding: 60px 40px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* 調整後のスタイル */
+.ad-video-area,
+.ad-complete-area {
+  padding: 20px 0;  /* 上下だけpadding */
+  text-align: center;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

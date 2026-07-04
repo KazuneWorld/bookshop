@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/* ================================ */
+/* 注文詳細ページ CSS */
+/* ================================ */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f8f8f8;
+	padding: 0;
+	margin: 0;
+}
+
+.main-content {
+	padding: 0;
+	margin-top: 1rem;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 32px 32px 40px;
+}
+
+.page-title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	color: #000;
+}
+
+/* ================================ */
+/* 注文情報 */
+/* ================================ */
+
+.order-info {
+	margin-bottom: 32px;
+	padding: 16px;
+	background: #f8f9fa;
+	border-radius: 6px;
+}
+
+.order-info-item {
+	font-size: 1rem;
+	color: #000;
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+
+.order-info-item:last-child {
+	margin-bottom: 0;
+}
+
+/* ================================ */
+/* 商品一覧 */
+/* ================================ */
+
+.section-title {
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #000;
+}
+
+.order-items {
+	margin-bottom: 32px;
+}
+
+/* ===== ヘッダー ===== */
+.order-header {
+	display: flex;
+	align-items: center;
+	background: #e9ecef;
+	font-weight: bold;
+	padding: 14px 0;
+	border-bottom: 2px solid #dee2e6;
+}
+
+/* ===== 商品行 ===== */
+.order-row {
+	display: flex;
+	align-items: center;
+	padding: 18px 0;
+	border-bottom: 1px solid #e0e0e0;
+	background-color:#FAFBFD;
+}
+
+/* ===== 書籍情報 ===== */
+.book-info {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.book-image {
+	width: 70px;
+	height: 90px;
+	object-fit: cover;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+}
+
+/* ===== 列幅（ヘッダー・行 共通） ===== */
+.col-book {
+	flex: 3;
+	text-align: left;
+	padding-left: 12px;
+}
+
+.col-price,
+.col-qty,
+.col-subtotal {
+	flex: 1;
+	text-align: center;
+}
+
+/* ================================ */
+/* 合計 */
+/* ================================ */
+
+.order-total {
+	text-align: right;
+	font-weight: bold;
+	color: #000;
+	font-size: 30px;
+    margin-top: 1rem;
+}
+
+/* ================================ */
+/* キャンセル */
+/* ================================ */
+
+.cancel-title {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 12px;
+	color: #000;
+}
+
+.btn {
+	padding: 8px 24px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.btn-danger {
+	background: #dc3545;
+	color: #fff;
+}
+
+.btn-danger:hover {
+	background: #b02a37;
+}
+
+/* ================================ */
+/* 戻る */
+/* ================================ */
+
+.back-link {
+	text-align: center;
+	margin-top: 24px;
+}
+
+
+/* ================================ */
+/* テーブル揃え修正（購入確認ページ基準） */
+/* ================================ */
+
+/* 列幅を固定してズレ防止 */
+.cart-table th:nth-child(1),
+.cart-table td:nth-child(1) {
+	width: 80px; /* 画像 */
+}
+
+.cart-table th:nth-child(2),
+.cart-table td:nth-child(2) {
+	width: auto; /* 書籍名 */
+	text-align: left;
+}
+
+.cart-table th:nth-child(3),
+.cart-table td:nth-child(3) {
+	width: 120px; /* 数量 */
+}
+
+.cart-table th:nth-child(4),
+.cart-table td:nth-child(4) {
+	width: 140px; /* 価格 */
+}
+
+/* 画像セル中央寄せ */
+.book-image-cell {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* 行の高さを揃える */
+.cart-table td {
+	vertical-align: middle;
+}
+
+/* 書籍名セル */
+.cart-table .title {
+	padding-left: 8px;
+	line-height: 1.4;
+}
+
+/* スマホ崩れ防止 */
+.cart-table {
+	table-layout: fixed;
+}

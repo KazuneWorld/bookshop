@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+body {
+    /* 全体背景と余白 */
+    background: #f8f8f8;
+    /* font-family: 'Yu Gothic', 'Meiryo', sans-serif; */
+    padding: 0;
+}
+
+.main-content {
+	/* メイン背景と余白 */
+	padding: 0 0;
+}
+
+.container {
+	/* ページ中央の白背景ボックス */
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 32px 24px 24px 24px;
+}
+
+.page-title {
+	/* ページタイトル */
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 24px;
+	color: #000;
+	text-align: center;
+}
+
+.checkout-section {
+	/* 各セクションの区切り */
+	margin-bottom: 32px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.checkout-section:last-child {
+	border-bottom: none;
+}
+.section-title {
+	/* セクション見出し */
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+.checkout-form-container {
+	/* 入力フォームのレイアウト */
+	display: block;
+}
+.form-group {
+	/* 各入力項目（縦並び・幅デフォルト） */
+	display: flex;
+	flex-direction: column;
+}
+.form-label {
+	/* ラベル */
+	font-size: 1rem;
+	margin-bottom: 4px;
+}
+.form-input {
+	/* テキスト入力欄（幅デフォルト） */
+	padding: 6px 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: auto;
+	/* min-width: 0;
+	max-width: 100%; */
+	box-sizing: border-box;
+}
+.postal-code-group {
+	/* 郵便番号とボタン横並び */
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+.btn {
+	/* ボタン共通 */
+	padding: 6px 16px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.btn-primary {
+	/* メインボタン（青） */
+	background: #007bff;
+	color: #fff;
+}
+.btn-primary:hover {
+	background: #0056b3;
+}
+.btn-small {
+	/* 小さいボタン */
+	padding: 4px 10px;
+	font-size: 0.7rem;
+}
+.btn-large {
+	/* 大きいボタン */
+	padding: 10px 32px;
+	font-size: 1.1rem;
+}
+.payment-methods {
+	/* 支払い方法ラジオボタン */
+	display: flex;
+	gap: 24px;
+}
+.radio-label {
+	/* ラジオボタンラベル */
+	font-size: 1rem;
+	color: #000;
+	display: flex;
+	align-items: center;
+}
+.payment-details {
+	/* クレジットカード情報欄 */
+	background: #f1f3f5;
+	border-radius: 6px;
+	padding: 1px 16px 15px 16px;
+	margin-bottom: 24px;
+    margin-right: 37rem;
+}
+.payment-icon-title {
+	/* クレカアイコン */
+	font-size: 1.3rem;
+	margin-right: 6px;
+}
+.form-row {
+	/* 有効期限・CVV */
+	display: flex;
+	gap: 16px;
+}
+.form-col {
+	/* フォームカラム */
+	flex: 1 1 120px;
+}
+.divider {
+	/* セクション区切り線 */
+	margin: 32px 0 24px 0;
+	border: none;
+	border-top: 1.5px solid #bbb;
+}
+.cart-items {
+	/* 注文内容テーブル周り */
+	margin-bottom: 15px;
+}
+.cart-table {
+	/* 注文内容テーブル */
+	width: 100%;
+	border-collapse: collapse; /* セルの隙間を無くす */
+	background: #fafbfc;
+}
+.cart-table th, .cart-table td {
+	/* テーブルセル */
+	padding: 20px 8px;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+.cart-table th {
+	/* テーブルヘッダー */
+	background: #e9ecef;
+	font-weight: 600;
+	color: #000;
+}
+.cart-book-image {
+	/* 書籍画像 */
+	width: 60px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+.no-image {
+	/* 画像なしテキスト */
+	color: #aaa;
+	font-size: 0.9rem;
+}
+.table-cell {
+	/* テーブルセル中央寄せ */
+	vertical-align: middle;
+}
+/* 書籍名セルの左寄せ */
+.table-cell.title {
+	text-align: left;
+}
+.table-footer {
+	/* 合計金額行 */
+	background: #f1f3f5;
+	font-weight: bold;
+	color: #000;
+	font-size: 1.1rem;
+}
+.total-label {
+	/* 合計ラベル */
+	text-align: right;
+}
+.total-amount {
+	/* 合計金額 */
+	color: #000;
+	font-size: 1.5rem;
+}
+.confirm-message {
+	/* 注文確認メッセージ */
+	color: #000;
+	margin-bottom: 12px;
+	font-size: 1.05rem;
+}
+.form-actions {
+	/* 注文ボタン */
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 16px;
+	margin-top: 24px;
+	padding-right: 1rem;
+}
+.back-to-cart-link {
+	/* カートに戻るリンク */
+	font-size: 1rem;
+}
+.message-empty {
+	/* カート空メッセージ */
+	text-align: center;
+	font-size: 1rem;
+	margin: 32px 0;
+}
+.back-link {
+	/* 戻るリンク */
+	text-align: center;
+	margin-top: 24px;
+}
+
+/* カート合計金額表示 */
+.cart-total {
+	text-align: right;
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin-bottom: 24px;
+	padding-right: 1rem;
+}
+
+/* 各入力欄の幅指定ーーーーーーー */
+.form-input#postal-code,
+.form-input[name="postal-code"] {
+	width: 80px;
+}
+.form-input.prefecture,
+.form-input#prefecture {
+	width: 120px;
+}
+.form-input.city,
+.form-input#city {
+	width: 180px;
+}
+.form-input#address1,
+.form-input[name="address1"] {
+	width: 220px;
+}
+.form-input#address2,
+.form-input[name="address2"] {
+	width: 180px;
+}
+.form-input#recipient-name,
+.form-input[name="recipientName"] {
+	width: 140px;
+}
+.form-input#recipient-phone,
+.form-input[name="recipientPhone"] {
+	width: 160px;
+}

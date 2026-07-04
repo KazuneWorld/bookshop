@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+body {
+  background: #f8f8f8;
+  /* font-family: 'Yu Gothic', 'Meiryo', sans-serif; */
+  padding: 0;
+}
+
+.main-content {
+  padding: 3rem 0 0 0;
+}
+/* ページ中央の白背景ボックス */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+}
+.book-detail {
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* 書籍画像と情報部分 */
+.book-image {
+  width: 240px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6fa;
+  border-radius: 8px;
+  /* overflow: hidden;
+  flex-shrink: 0; */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+/* 書籍画像 */
+.book-image .image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* 画像のアスペクト比を維持しつつ、コンテナに収める */
+}
+.no-image {
+  color: #aaa;
+  font-size: 1rem;
+  text-align: center;
+}
+/* 書籍情報部分 */
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+/* 書籍タイトル */
+.book-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin: 0 0 0.5rem 0;
+}
+
+
+.book-meta {
+  font-size: 1.05rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.book-price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+}
+/* 在庫ステータス */
+.stock-warning {
+  color: #ff6b35;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1px 0;
+}
+
+.stock-out {
+  color: #d32f2f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1px 0;
+}
+
+.cart-form {
+  margin-top: 0.5rem;
+  display: flex;  /* カートフォームを横並びに */
+}
+
+.quantity-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 20px;
+}
+
+.quantity-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.quantity-input {
+  width: 80px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+}
+.book-actions {
+  margin-top: 1.5rem;
+}
+
+.cart-link {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.9rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-cart {
+  background: #1976d2;
+  color: #fff;
+}
+.btn-cart:hover {
+  background: #1256a3;
+}
+
+
+.message-error {
+  color: #d32f2f;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 2rem 0;
+}

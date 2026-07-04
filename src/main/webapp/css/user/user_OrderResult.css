@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body {
+	background: #f5f6fa;
+}
+
+/* 画面中央寄せ */
+.container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* 白いカード部分（logout-contentと統一） */
+.complete-content {
+	background: #fff;
+	padding: 4rem 2rem 2rem 2rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	width: 420px;
+	text-align: center;
+}
+
+/* タイトル */
+.complete-title {
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+/* メッセージ */
+.complete-message {
+	margin-bottom: 2rem;
+	font-size: 1rem;
+}
+
+/* ボタン共通 */
+.btn {
+	padding: 0.7rem 0;
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	font-weight: bold;
+}
+
+/* メインボタン */
+.btn-primary {
+	background: #1976d2;
+	color: #fff;
+}
+
+/* ホバー */
+.btn-primary:hover {
+	background: #1256a3;
+}
+
+/* 下のリンク */
+.link {
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 1rem;
+	color: #1976d2;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+.link:hover {
+	text-decoration: none;
+}
+
+/* pタグ余白調整 */
+.action-item {
+	margin: 0;
+}
+
+/* 「買い物を続ける」の下線を強制的に消す */
+.complete-actions a {
+	text-decoration: none !important;
+}
+
+.complete-actions a:hover {
+	text-decoration: none !important;
+}
+
