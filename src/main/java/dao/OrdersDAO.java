@@ -26,7 +26,6 @@ private final String JDBC_URL = "jdbc:mysql://localhost/bookshop";
 	// 注文登録
 	public boolean insertOrder(User loginUser, List<Book> cart) {
 		if (loginUser == null || cart == null || cart.isEmpty()) {
-			System.out.println("ユーザー未ログインまたはカートが空です");
 			return false;
 		}
 

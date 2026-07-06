@@ -192,18 +192,4 @@ private final String JDBC_URL = "jdbc:mysql://localhost/bookshop";
         return topBooks;
     }
 
-
-    // ---------------------------
-    // デバッグ用：ユーザーの注文と注文詳細をコンソール表示
-    // ---------------------------
-    public void printUserOrdersWithDetails(User user) {
-        List<Order> orders = getMyOrders(user);
-
-        for (Order order : orders) {
-            System.out.println(order); // Order の情報表示
-            for (OrderDetail d : order.getOrderDetails()) {
-                System.out.println("  " + d); // OrderDetail をインデントして表示
-            }
-        }
-    }
 }

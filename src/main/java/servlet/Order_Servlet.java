@@ -46,11 +46,9 @@ public class Order_Servlet extends HttpServlet {
         boolean success = ordersDAO.insertOrder(loginUser, cart);
 
         if (success) {
-            System.out.println("注文登録成功");
             // 注文完了後はカートを空にする
             session.setAttribute("cart", new ArrayList<Book>());
         } else {
-            System.out.println("注文登録失敗");
             request.setAttribute("errorMsg", "注文登録に失敗しました");
         }
 

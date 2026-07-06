@@ -73,11 +73,6 @@ private final String JDBC_URL = "jdbc:mysql://localhost/bookshop";
 		} catch (ClassNotFoundException e) {
 			throw new IllegalStateException("JDBCドライバを読み込めませんでした");
 		}
-
-		System.out.println(" UsersDAO.insert 呼ばれた ");
-		System.out.println("name=" + user.getName());
-		System.out.println("pass=" + user.getPass());
-
 	
 		String sql = "INSERT INTO users(name, pass, address) VALUES(?, ?, ?)";
 

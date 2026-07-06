@@ -18,8 +18,6 @@ public class Register_Servlet extends HttpServlet {
 	
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-    	
-    	System.out.println(" Register servlet 呼ばれた ");
 
         request.setCharacterEncoding("UTF-8");
 
